@@ -1,0 +1,239 @@
+<html lang="es">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glosario Informático</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      function navegarALetra(letra) {
+          const seccion = document.querySelector(`div[data-letra="${letra}"]`);
+          if (seccion) {
+              seccion.scrollIntoView({ behavior: 'smooth' });
+          }
+      }
+      window.onscroll = function() {mostrarBotonVolverArriba()};
+
+function mostrarBotonVolverArriba() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("btnVolverArriba").style.display = "block";
+    } else {
+        document.getElementById("btnVolverArriba").style.display = "none";
+    }
+}
+
+function volverArriba() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+  </script>
+</head>
+<body>
+  <h1>Inicio</h1>
+  <h2>Glosario Informatico</h2>
+    <header>
+        <nav>
+          <h1>
+            paginas
+          </h1>
+            <ul>
+              
+                <li><a href="pagina1.html">Pagina 1</a></li>
+                
+                 </ul>
+        
+               
+                    <h2>Términos Informáticos (N-Z)</h2>
+                    <div class="nav-letras">
+                      <button onclick="navegarALetra('N')">N</button>
+                      <button onclick="navegarALetra('O')">O</button>
+                      <button onclick="navegarALetra('P')">P</button>
+                      <button onclick="navegarALetra('Q')">Q</button>
+                      <button onclick="navegarALetra('R')">R</button>
+                      <button onclick="navegarALetra('S')">S</button>
+                      <button onclick="navegarALetra('T')">T</button>
+                      <button onclick="navegarALetra('U')">U</button>
+                      <button onclick="navegarALetra('V')">V</button>
+                      <button onclick="navegarALetra('W')">W</button>
+                      <button onclick="navegarALetra('X')">X</button>
+                      <button onclick="navegarALetra('Y')">Y</button>
+                      <button onclick="navegarALetra('Z')">Z</button>
+                  </div>
+                    <!-- Letra N -->
+                    <div class="letra-seccion" data-letra="N">
+                      <h2>N</h2>
+                        <div class="termino">
+                            <h3>Network</h3>
+                            <p>Sistema de computadoras y dispositivos interconectados para compartir recursos.</p>
+                        </div>
+                        <div class="termino">
+                            <h3>Node</h3>
+                            <p>Punto de conexión o intersección en una red informática.</p>
+                        </div>
+                    </div>
+        
+                    <!-- Letra O -->
+                    <div class="letra-seccion" data-letra="O">
+                      <h2>O</h2>
+                        <div class="termino">
+                            <h3>Operating System</h3>
+                            <p>Software que gestiona los recursos del hardware y proporciona servicios a los programas de aplicación.</p>
+                        </div>
+                        <div class="termino">
+                            <h3>Output</h3>
+                            <p>Resultado o datos producidos por un sistema informático.</p>
+                        </div>
+                    </div>
+        
+                    <!-- Letra P -->
+                    <div class="letra-seccion" data-letra="P">
+                      <h2>P</h2>
+                        <div class="termino">
+                            <h3>Password</h3>
+                            <p>Contraseña que protege el acceso a un sistema o cuenta.</p>
+                        </div>
+                        <div class="termino">
+                            <h3>Protocol</h3>
+                            <p>Conjunto de reglas que permiten la comunicación entre dispositivos en una red.</p>
+                        </div>
+                    </div>
+        
+                    <!-- Letra Q -->
+                    <div class="letra-seccion" data-letra="Q">
+                      <h2>Q</h2>
+                        <div class="termino">
+                            <h3>Query</h3>
+                            <p>Consulta o petición de información a una base de datos.</p>
+                        </div>
+                        <div class="termino">
+                            <h3>Queue</h3>
+                            <p>Estructura de datos que organiza elementos en orden de llegada.</p>
+                        </div>
+                    </div>
+        
+                    <!-- Letra R -->
+                    <div class="letra-seccion" data-letra="R">
+                      <h2>R</h2>
+                        <div class="termino">
+                            <h3>RAM</h3>
+                            <p>Memoria de acceso aleatorio que almacena datos temporalmente.</p>
+                        </div>
+                        <div class="termino">
+                            <h3>Router</h3>
+                            <p>Dispositivo que dirige el tráfico de datos entre diferentes redes.</p>
+                        </div>
+                    </div>
+        
+                    <!-- Letra S -->
+                    <div class="letra-seccion" data-letra="S">
+                      <h2>S</h2>
+                        <div class="termino">
+                            <h3>Software</h3>
+                            <p>Conjunto de programas y rutinas que permiten realizar tareas específicas.</p>
+                        </div>
+                        <div class="termino">
+                            <h3>Server</h3>
+                            <p>Computadora que proporciona servicios a otros dispositivos en una red.</p>
+                        </div>
+                    </div>
+        
+                    <!-- Letra T -->
+                    <div class="letra-seccion" data-letra="T">
+                      <h2>T</h2>
+                        <div class="termino">
+                            <h3>Terminal</h3>
+                            <p>Interfaz de línea de comandos para interactuar con el sistema.</p>
+                        </div>
+                        <div class="termino">
+                            <h3>Thread</h3>
+                            <p>Secuencia de instrucciones que puede ser ejecutada en paralelo.</p>
+                        </div>
+                    </div>
+        
+                    <!-- Letra U -->
+                    <div class="letra-seccion" data-letra="U">
+                      <h2>U</h2>
+                        <div class="termino">
+                            <h3>URL</h3>
+                            <p>Localizador uniforme de recursos que especifica la ubicación de un recurso en Internet.</p>
+                        </div>
+                        <div class="termino">
+                            <h3>USB</h3>
+                            <p>Estándar de conexión universal para dispositivos periféricos.</p>
+                        </div>
+                    </div>
+        
+                    <!-- Letra V -->
+                    <div class="letra-seccion" data-letra="V">
+                      <h2>V</h2>
+                        <div class="termino">
+                            <h3>Virtual Memory</h3>
+                            <p>Técnica que utiliza el disco duro como extensión de la memoria RAM.</p>
+                        </div>
+                        <div class="termino">
+                            <h3>Virus</h3>
+                            <p>Programa malicioso que puede dañar o alterar el funcionamiento del sistema.</p>
+                        </div>
+                    </div>
+        
+                    <!-- Letra W -->
+                    <div class="letra-seccion" data-letra="W">
+                      <h2>W</h2>
+                        <div class="termino">
+                            <h3>Web</h3>
+                            <p>Sistema de documentos interconectados accesibles por Internet.</p>
+                        </div>
+                        <div class="termino">
+                            <h3>Wireless</h3>
+                            <p>Tecnología que permite la comunicación sin cables.</p>
+                        </div>
+                    </div>
+        
+                    <!-- Letra X -->
+                    <div class="letra-seccion" data-letra="X">
+                      <h2>X</h2>
+                        <div class="termino">
+                            <h3>XML</h3>
+                            <p>Lenguaje de marcado extensible para almacenar y transportar datos.</p>
+                        </div>
+                        <div class="termino">
+                            <h3>XSS</h3>
+                            <p>Tipo de vulnerabilidad de seguridad en aplicaciones web.</p>
+                        </div>
+                    </div>
+        
+                    <!-- Letra Y -->
+                    <div class="letra-seccion" data-letra="X">
+                      <h2>X</h2>
+                        <div class="termino">
+                            <h3>YAML</h3>
+                            <p>Formato de serialización de datos legible por humanos.</p>
+                        </div>
+                        <div class="termino">
+                            <h3>YouTube</h3>
+                            <p>Plataforma de compartición y visualización de videos en línea.</p>
+                        </div>
+                    </div>
+        
+                    <!-- Letra Z -->
+                    <div class="letra-seccion" data-letra="Z">
+                      <h2>Z</h2>
+                        <div class="termino">
+                            <h3>ZIP</h3>
+                            <p>Formato de archivo comprimido.</p>
+                        </div>
+                        <div class="termino">
+                            <h3>Zone</h3>
+                            <p>Área específica de una red o sistema con características particulares.</p>
+                        </div>
+                    </div>
+                </main>
+            </header>
+            <footer>
+                <p>&copy; 2024 Glosario Informático</p>
+            </footer>
+        </body>
+        </html>
+        

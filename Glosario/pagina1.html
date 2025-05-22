@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glosario Informático</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      function navegarALetra(letra) {
+          const seccion = document.querySelector(`div[data-letra="${letra}"]`);
+          if (seccion) {
+              seccion.scrollIntoView({ behavior: 'smooth' });
+          }
+      }
+  </script>
+</head>
+<body>
+  <h1>Inicio</h1>
+    <h2>Glosario Informatico</h2>
+    <header>
+        <nav>
+          <h1>
+            paginas
+          </h1>
+            <ul>
+                <li><a href="pagina2.html">Pagina2</a></li>
+                <h2>Términos Informáticos (A-M)</h2>
+                </ul>
+                <!-- Barra de navegación por letras -->
+                <div class="nav-letras">
+                    <button onclick="navegarALetra('A')">A</button>
+                    <button onclick="navegarALetra('B')">B</button>
+                    <button onclick="navegarALetra('C')">C</button>
+                    <button onclick="navegarALetra('D')">D</button>
+                    <button onclick="navegarALetra('E')">E</button>
+                    <button onclick="navegarALetra('F')">F</button>
+                    <button onclick="navegarALetra('G')">G</button>
+                    <button onclick="navegarALetra('H')">H</button>
+                    <button onclick="navegarALetra('I')">I</button>
+                    <button onclick="navegarALetra('J')">J</button>
+                    <button onclick="navegarALetra('K')">K</button>
+                    <button onclick="navegarALetra('L')">L</button>
+                    <button onclick="navegarALetra('M')">M</button>
+                </div>
+        </nav>
+       
+       
+        <div class="letra-seccion" data-letra="A"> <h2>A</h2>
+          <div class="termino">
+              <h3>Algorithm</h3>
+              <p>Conjunto ordenado de operaciones sistemáticas que permite hacer un cálculo y hallar la solución de un tipo de problemas.</p>
+          </div>
+          <div class="termino">
+              <h3>Antivirus</h3>
+              <p>Software diseñado para detectar y eliminar programas maliciosos del sistema.</p>
+          </div>
+      </div>
+
+      <!-- Letra B -->
+      <div class="letra-seccion" data-letra="B"> <h2>B</h2>
+          <div class="termino">
+              <h3>Backup</h3>
+              <p>Copia de seguridad de datos para prevenir pérdidas.</p>
+          </div>
+          <div class="termino">
+              <h3>Browser</h3>
+              <p>Programa que permite acceder y visualizar páginas web.</p>
+          </div>
+      </div>
+
+      <!-- Letra C -->
+      <div class="letra-seccion" data-letra="C"> <h2>C</h2>
+        <div class="termino">
+              <h3>Cache</h3>
+              <p>Memoria de acceso rápido que almacena datos frecuentemente usados.</p>
+          </div>
+          <div class="termino">
+              <h3>Cookie</h3>
+              <p>Archivo que almacena información sobre la actividad del usuario en un sitio web.</p>
+          </div>
+      </div>
+
+      <!-- Letra D -->
+      <div class="letra-seccion" data-letra="D"> <h2>D</h2>
+        <div class="termino">
+              <h3>Desktop</h3>
+              <p>Interfaz principal del sistema operativo donde se muestran iconos y ventanas.</p>
+          </div>
+          <div class="termino">
+              <h3>Download</h3>
+              <p>Proceso de transferir datos desde un servidor remoto a un dispositivo local.</p>
+          </div>
+      </div>
+
+      <!-- Letra E -->
+      <div class="letra-seccion" data-letra="E"> <h2>E</h2>
+        <div class="termino">
+              <h3>Email</h3>
+              <p>Sistema de intercambio de mensajes electrónicos a través de Internet.</p>
+          </div>
+          <div class="termino">
+              <h3>Encryption</h3>
+              <p>Proceso de codificación de información para protegerla de accesos no autorizados.</p>
+          </div>
+      </div>
+
+      <!-- Letra F -->
+      <div class="letra-seccion" data-letra="F"><h2>F</h2>
+          <div class="termino">
+              <h3>Firewall</h3>
+              <p>Sistema de seguridad que controla el tráfico de red.</p>
+          </div>
+          <div class="termino">
+              <h3>Framework</h3>
+              <p>Estructura conceptual y tecnológica que sirve de base para el desarrollo de software.</p>
+          </div>
+      </div>
+
+      <!-- Letra G -->
+      <div class="letra-seccion" data-letra="G">
+        <h2>G</h2>
+          <div class="termino">
+              <h3>Gateway</h3>
+              <p>Puerta de enlace entre diferentes redes.</p>
+          </div>
+          <div class="termino">
+              <h3>Graphics</h3>
+              <p>Elementos visuales generados o procesados por computadora.</p>
+          </div>
+      </div>
+
+      <!-- Letra H -->
+      <div class="letra-seccion" data-letra="H">
+        <h2>H</h2>
+          <div class="termino">
+              <h3>Hardware</h3>
+              <p>Componentes físicos de un sistema informático.</p>
+          </div>
+          <div class="termino">
+              <h3>Hosting</h3>
+              <p>Servicio de alojamiento para sitios web y otros contenidos en Internet.</p>
+          </div>
+      </div>
+
+      <!-- Letra I -->
+      <div class="letra-seccion" data-letra="I">
+        <h2>I</h2>
+          <div class="termino">
+              <h3>Input</h3>
+              <p>Datos introducidos en un sistema informático para su procesamiento.</p>
+          </div>
+          <div class="termino">
+              <h3>Interface</h3>
+              <p>Medio de comunicación entre el usuario y el sistema informático.</p>
+          </div>
+      </div>
+
+      <div class="letra-seccion" data-letra="J">
+        <h2>J</h2>
+          <div class="termino">
+              <h3>Java</h3>
+              <p>Lenguaje de programación orientado a objetos multiplataforma.</p>
+          </div>
+          <div class="termino">
+              <h3>JavaScript</h3>
+              <p>Lenguaje de programación interpretado usado principalmente en desarrollo web.</p>
+          </div>
+      </div>
+
+      
+      <div class="letra-seccion" data-letra="K">
+        <h2>K</h2>
+          <div class="termino">
+              <h3>Keyboard</h3>
+              <p>Dispositivo de entrada que permite introducir texto y comandos.</p>
+          </div>
+          <div class="termino">
+              <h3>Kernel</h3>
+              <p>Núcleo del sistema operativo que gestiona los recursos del hardware.</p>
+          </div>
+      </div>
+
+      <!-- Letra L -->
+      <div class="letra-seccion" data-letra="L">
+        <h2>L</h2>
+          <div class="termino">
+              <h3>Laptop</h3>
+              <p>Computadora portátil diseñada para su uso móvil.</p>
+          </div>
+          <div class="termino">
+              <h3>Link</h3>
+              <p>Conexión o enlace entre diferentes elementos o páginas web.</p>
+          </div>
+      </div>
+
+      <!-- Letra M -->
+      <div class="letra-seccion" data-letra="M">
+        <h2>M</h2>
+          <div class="termino">
+              <h3>Memory</h3>
+              <p>Dispositivo que permite el almacenamiento de datos y programas.</p>
+          </div>
+          <div class="termino">
+              <h3>Monitor</h3>
+              <p>Dispositivo de salida que muestra información visual al usuario.</p>
+          </div>
+      </div>
+  </main>
+</header>
+</body>
+</html>

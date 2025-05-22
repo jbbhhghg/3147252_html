@@ -1,0 +1,99 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Navegación */
+header ul {
+    list-style: none;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* Secciones de letras */
+.letra-seccion {
+    background-color: rgb(255, 254, 254);
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.letra-seccion h2 {
+    color: #000000;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 5px;
+}
+
+/* Términos */
+.termino {
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 3px solid #333;
+    background-color: #ffffff;
+}
+
+.termino h3 {
+    color: #000000;
+    margin: 0 0 5px 0;
+}
+
+.termino p {
+    margin: 0;
+    color: #000000;
+}
+
+/* Navegación por letras */
+.nav-letras {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+.nav-letras button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.nav-letras button:hover {
+    background-color: #000000;
+}
+
+/* Botón volver arriba */
+#btnVolverArriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
